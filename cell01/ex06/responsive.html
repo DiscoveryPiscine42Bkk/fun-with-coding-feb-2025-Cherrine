@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .container{
+            display: flex;
+            height: 200px;
+            align-items: center;
+            padding-left: 10px;
+            font-family: 'Century Gothic', sans-serif;
+        }
+        @media (max-width: 600px) {
+            body {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="background-color: lightblue;">This is the left box colored in lightblue</div>
+    <div class="container" style="background-color: lightcoral;">This is the right box colored in lightcoral</div>
+</body>
+</html>
