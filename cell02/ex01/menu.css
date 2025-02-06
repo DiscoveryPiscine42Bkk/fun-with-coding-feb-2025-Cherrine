@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Century Gothic', sans-serif;
+}
+p{
+    padding-right: 5px;
+}

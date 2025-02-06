@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    height: 200px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.parallax, .anotherparallax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallax {
+    background-image: url('https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/hero-banner-2x.jpeg&w=3840&q=75');
+}
+
+.anotherparallax {
+    background-image: url('https://iso.500px.com/wp-content/uploads/2018/05/Blog-marketplace-getty500px-48429366-nologo-3000x2000.png');
+}
+
+p {
+    color: white;
+    font-size: 36px; 
+    font-family: 'Century Gothic', sans-serif;
+}
