@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherrine - IT Student at KMITL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body class="bg-slate-900 text-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full bg-slate-800/75 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-xl font-bold">Cherrine's Portfolio</a>
+                    <a href="#newSection" class=" bg-cyan-500 text-white px-4 py-2 rounded-full">Switch to pminchar's</a> <!-- New button here -->
+                </div>
+                <div class="space-x-6">
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col items-center justify-center px-4 pt-16 text-center">
+      <!-- Profile Picture -->
+      <img src="pictures/cherrine_profile.jpg" 
+          class="w-64 h-64w-64 rounded-full border-4 border-cyan-400 shadow-lg mb-4">
+      
+      <!-- Hero Text -->
+      <div>
+          <h1 class="font-sans text-5xl font-bold mb-4">Hello, I'm <span class="text-cyan-400">Cherrine</span></h1>
+          <p class="text-xl text-gray-400 mb-8">IT Student at KMITL | Developer | Problem Solver</p>
+          <div class="space-x-4">
+              <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg inline-block transition-colors">Contact Me</a>
+              <a href="#projects" class="border border-cyan-500 hover:bg-cyan-500/10 px-6 py-3 rounded-lg inline-block transition-colors">View Work</a>
+          </div>
+      </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+            <div class="max-w-2xl mx-auto text-gray-300 space-y-4">
+                <p>I'm an undergraduate student at the School of Information Technology, King Mongkut's Institute of Technology Ladkrabang (KMITL).</p>
+                <p>Passionate about technology and software development, I focus on creating efficient and user-friendly solutions to real-world problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-3xl mx-auto">
+                <!-- Programming Languages -->
+                <div class="text-center">
+                    <i class="devicon-python-plain colored text-5xl mb-2"></i>
+                    <p class="text-gray-300">Python</p>
+                </div>
+                <div class="text-center">
+                    <i class="devicon-java-plain colored text-5xl mb-2"></i>
+                    <p class="text-gray-300">Java</p>
+                </div>
+                <div class="text-center">
+                    <i class="devicon-javascript-plain colored text-5xl mb-2"></i>
+                    <p class="text-gray-300">JavaScript</p>
+                </div>
+                <div class="text-center">
+                    <i class="devicon-html5-plain colored text-5xl mb-2"></i>
+                    <p class="text-gray-300">HTML5</p>
+                </div>
+                <div class="text-center">
+                    <i class="devicon-flutter-plain colored text-5xl mb-2"></i>
+                    <p class="text-gray-300">Flutter</p>
+                </div>
+                <div class="text-center">
+                    <i class="devicon-c-plain colored text-5xl mb-2"></i>
+                    <p class="text-gray-300">C</p>
+                </div>
+                <div class="text-center">
+                    <i class="devicon-cplusplus-plain colored text-5xl mb-2"></i>
+                    <p class="text-gray-300">C++</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto justify-center">
+                <!-- Project Card -->
+                <div class="bg-slate-700 rounded-lg overflow-hidden relative">
+
+                  <div class="relative group">
+                      <img id="projectImage" src="pictures/bot-profile.jpg" class="h-48 w-full object-cover transition-opacity duration-300">
+                  </div>
+
+                  <div class="p-6">
+                      <h3 class="text-xl font-bold mb-2">GG Discord Bot</h3>
+                      <p class="text-gray-300 mb-4">GG Discord Bot is a utility bot for discord application developed with Python language. It helps with entertainment, learning, and AI chat interaction.</p>
+                      <div class="flex space-x-4">
+                          <a href="https://github.com/KawaiiZT/GG-Discord-Bot" target="_blank" class="text-cyan-400 hover:text-cyan-300">Source Code</a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="bg-slate-700 rounded-lg overflow-hidden relative">
+
+                <div class="relative group">
+                    <img id="projectImage" src="pictures/ginkhaoyang.png" class="h-48 w-full object-cover transition-opacity duration-300">
+                </div>
+                <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Ginkhaoyang</h3>
+                        <p class="text-gray-300 mb-4">Ginkhaoyang is a website for ordering foods online developed with Dart language.</p>
+                        <div class="flex space-x-4 items-end">
+                            <a href="https://github.com/Cherrine/GinKaoYang" target="_blank" class="text-cyan-400 hover:text-cyan-300">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-700 rounded-lg overflow-hidden relative">
+
+                    <div class="relative group">
+                        <img id="projectImage" src="pictures/poster_project.png" class="h-48 w-full object-cover transition-opacity duration-300">
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Automatic-Bin</h3>
+                        <p class="text-gray-300 mb-4">Automatic-Bin is a small trash bin equipped with a motion sensor that allows it to open automatically, controlled by an Arduino UNO R4 board.</p>
+                        <div class="flex space-x-4 items-end">
+                            <a href="https://github.com/Chanat035/automatic_bin" target="_blank" class="text-cyan-400 hover:text-cyan-300">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Get In Touch</h2>
+            <div class="max-w-xl mx-auto">
+                <div class="flex flex-col space-y-4">
+                    <a href="mailto:your.email@kmitl.ac.th" class="flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 py-3 rounded-lg transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span>66070031@kmitl.ac.th</span>
+                    </a>
+                    <a href="https://github.com/Cherrine" target="_blank" class="flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 py-3 rounded-lg transition-colors">
+                        <i class="devicon-github-original text-2xl"></i>
+                        <span>GitHub Profile</span>
+                    </a>
+                    <a href="https://www.instagram.com/cheristalyn/" target="_blank" class="flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 py-3 rounded-lg transition-colors">
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png" width="23" height="23">
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>&copy; 2025 jinphol, Cherrine. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="fixed bottom-5 right-5 bg-cyan-500 text-white px-4 py-2 rounded-full shadow-md opacity-0 transition-opacity duration-300">
+        ↑ Top
+    </button>
+</body>
+</html>
