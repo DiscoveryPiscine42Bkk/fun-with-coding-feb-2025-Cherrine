@@ -19,25 +19,34 @@
     <input type="submit" value="Try me!" onclick="calculate()">
     
     <script>
+        var inactivityTimer;
+    
+        function resetTimer() {
+            clearTimeout(inactivityTimer);
+            inactivityTimer = setTimeout(function() {
+                alert("Please, use me...");
+            }, 30000);
+        }
+    
         function calculate() {
             var left = document.getElementById("left").value;
             var right = document.getElementById("right").value;
             var operator = document.getElementById("operator").value;
-            
+    
             if (isNaN(left) || isNaN(right) || left === "" || right === "" || left < 0 || right < 0) {
                 alert("Error :(");
                 return;
             }
-            
+    
             left = parseInt(left);
             right = parseInt(right);
-            
+    
             if ((operator === '/' || operator === '%') && right == 0) {
                 alert("It's over 9000!");
                 console.log("It's over 9000!");
                 return;
             }
-            
+    
             var result;
             switch (operator) {
                 case '+': result = left + right; break;
@@ -46,14 +55,17 @@
                 case '/': result = left / right; break;
                 case '%': result = left % right; break;
             }
-            
+    
             alert("Result: " + result);
             console.log("Result: " + result);
+            resetTimer();
         }
-        
-        setInterval(function() {
-            alert("Please, use me...");
-        }, 30000);
-    </script>
-</body>
+    
+        document.addEventListener("keydown", resetTimer);
+        document.addEventListener("click", resetTimer);
+
+        resetTimer();
+
+        </script>
+    </body>
 </html>
